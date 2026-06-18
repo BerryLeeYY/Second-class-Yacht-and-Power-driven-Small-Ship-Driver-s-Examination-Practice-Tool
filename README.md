@@ -41,24 +41,4 @@ npm run preview
 
 此專案已設定為 Railway 靜態網站服務（build → `dist/`，以 `serve` 提供 SPA）。
 
-### 方式一：Railway Dashboard（建議）
 
-1. 將專案推送到 GitHub（需先 `git init` 並建立 repository）
-2. 登入 [Railway](https://railway.com/) → **New Project** → **Deploy from GitHub repo**
-3. 選擇此 repository，Railway 會自動讀取 `railway.toml` 與 `nixpacks.toml`
-4. 部署完成後，到服務的 **Settings → Networking → Generate Domain** 取得公開網址
-
-### 方式二：Railway CLI
-
-```bash
-npm install -g @railway/cli
-railway login
-railway init
-railway up
-railway domain
-```
-
-### 環境變數
-
-通常不需額外設定。Railway 會自動注入 `PORT`，`npm start` 會監聽該埠號。
-"# Second-class-Yacht-and-Power-driven-Small-Ship-Driver-s-Examination-Practice-Tool" 
