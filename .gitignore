@@ -1,0 +1,18 @@
+# dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
+# logs
+npm-debug.log*
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+.netlify
+
+# parse artifacts
+raw_text.txt
